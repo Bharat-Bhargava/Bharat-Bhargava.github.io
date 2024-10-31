@@ -1,0 +1,244 @@
+/* Reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #a8d8f0; /* Light sky blue background */
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for Name */
+header h1 {
+    font-size: 2.5em; /* Increase font size */
+    color: #002366; /* Navy blue color */
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+header h1:hover {
+    color: #003399; /* Slightly lighter blue on hover */
+    transform: scale(1.05); /* Slightly enlarges the name */
+}
+
+
+
+
+
+/* Boxed style for navigation links */
+header nav a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #0073b1; /* Link color */
+    text-decoration: none;
+    padding: 8px 15px; /* Padding for box effect */
+    border: 2px solid #0073b1; /* Border matching link color */
+    border-radius: 5px; /* Rounded corners for boxes */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+
+header nav a:hover {
+    background-color: #0073b1; /* Background color on hover */
+    color: #fff; /* Text color on hover */
+}
+
+
+/* Main container styling */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Under construction note */
+.under-construction p {
+    color: #d9534f; /* Red color for visibility */
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Centered Profile Photo */
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo img {
+    width: 100%; /* Ensures responsiveness */
+    max-width: 300px; /* Limits the photo's maximum size */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fits well within the circle */
+}
+
+/* Bio section */
+.bio {
+    margin: 20px;
+    font-size: 1em;
+    color: #333;
+}
+
+.bio p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Social links styling */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+    color: #0073b1;
+    text-decoration: none;
+}
+
+.social-links .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Ribbon styling */
+.ribbon {
+    width: 100%;
+    height: 50px;
+    background-color: #0073b1;
+    border-radius: 0 0 10px 10px;
+    margin-top: 20px;
+}
+
+/* Hover effect for social media icons STILL APART OF SOCIAL LINKS CLASS :) */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social-links .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links a:hover .icon {
+    transform: scale(1.2); /* Slightly enlarges the icon */
+    filter: brightness(1.2); /* Lightens the icon */
+}
+
+
+/* Hover effect for social media icons and text STILL APART OF SOCIAL LINKS CLASS  */
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #0073b1; /* Default link color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for text */
+}
+
+.social-links .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for icons */
+}
+
+.social-links a:hover {
+    color: #005480; /* Darker blue on hover for text */
+    transform: scale(1.05); /* Slightly enlarge text and icon */
+}
+
+
+
+
+
+
+
+/* Quotes page background */
+.quotes-page {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Quotes styling */
+.quotes {
+    padding: 20px;
+    text-align: left;
+}
+
+.quotes blockquote {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #dcdcdc;
+    margin-bottom: 20px;
+    border-left: 4px solid #d9534f;
+    padding-left: 15px;
+}
+
+
+
+
+/* Gallery styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* Top ribbon styling */
+.top-ribbon {
+    width: 100%;
+    height: 50px;
+    background-color: #0073b1; /* Same blue color as the bottom ribbon */
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
