@@ -14,6 +14,8 @@ body {
     background-color: #a8d8f0; /* Light sky blue background */
     flex-direction: column;
     padding: 20px;
+    font-family: 'Consolas', monospace;
+    
 }
 
 /* Header styling */
@@ -24,18 +26,17 @@ header {
 
 /* Styling for Name */
 header h1 {
-    font-size: 2.5em; /* Increase font size */
-    color: #002366; /* Navy blue color */
-    margin-bottom: 10px;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+    font-family: 'Consolas', monospace;
+    color: navy; /* Keep the navy color */
+    font-size: 2.5em; /* Adjust size as needed */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
+/* Hover effect to match other elements */
 header h1:hover {
-    color: #003399; /* Slightly lighter blue on hover */
-    transform: scale(1.05); /* Slightly enlarges the name */
+    color: #0d7dd8; /* Slightly lighter on hover */
+    transform: scale(1.05); /* Small pop-out effect */
 }
-
 
 
 
@@ -56,6 +57,24 @@ header nav a:hover {
     background-color: #0073b1; /* Background color on hover */
     color: #fff; /* Text color on hover */
 }
+
+header nav a {
+    color: navy; /* Initial color */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for a pop-out and color change */
+header nav a:hover {
+  
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+
+
+
+
 
 
 /* Main container styling */
@@ -224,6 +243,22 @@ header nav a:hover {
     height: auto;
     border-radius: 10px;
 }
+
+/* Style for highlighted link */
+/* Style for highlighted link with stronger pop-out */
+.highlighted-link {
+    color: navy; /* Initial color */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Enhanced hover effect for pop-out */
+.highlighted-link:hover {
+    color: #4c7ea8; /* Lighter shade on hover */
+    transform: scale(1.1); /* Increased scale for a more prominent pop-out */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
 
 
 
