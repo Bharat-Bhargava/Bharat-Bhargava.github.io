@@ -1,0 +1,94 @@
+/* Basic Styling for Courses Page */
+body {
+    font-family: 'Consolas', 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0059b3;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cce6ff;
+}
+
+/* Courses Container */
+.courses-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Course Card Styling */
+.course {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 6px solid #0059b3;
+}
+
+.course:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course h2 {
+    margin: 0 0 10px;
+    color: #0059b3;
+}
+
+.course p {
+    margin: 0;
+    color: #555;
+}
+
+
+
+
+
+
+
+
+.trail {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(194, 222, 250, 0.5);
+    pointer-events: none;
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}

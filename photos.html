@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photos</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+        <h1>My Photos</h1>
+        <a href="index.html" class="back-link">Back to About Me</a>
+    </header>
+
+    <div class="gallery" id="photo-gallery">
+        <!-- Dynamically added photos will go here -->
+    </div>
+
+    <!-- Modal for photo overlay -->
+    <div class="modal" id="photo-modal">
+        <span class="close" id="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <p id="modal-caption"></p>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
