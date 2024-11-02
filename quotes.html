@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favorite Quotes</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Favourite Quotes</title>
+    <link rel="stylesheet" href="quotes.css">
 </head>
-
-<body class="quotes-page">
+<body>
+    <a id="back-to-about" href="index.html">Back to About Me</a>
     <header>
-        <h1>Favorite Quotes</h1>
-        <a href="index.html">Back to About Me</a>
+        <h1>Favourite Quotes</h1>
+        <button class="why-button" onclick="showOverlay()">Why?</button>
     </header>
 
-    <div class="quotes">
-        <blockquote>“The only limit to our realization of tomorrow is our doubts of today.” – Franklin D. Roosevelt
-        </blockquote>
-        <blockquote>“Fortune favors only prepared minds.” – Louis Pasteur</blockquote>
-        <blockquote>"...dans les champs de l'observation le hasard ne favorise que les esprits prepares..." – Louis Pasteur</blockquote>
-        <blockquote>🚧🚧🚧 MORE TO BE ADDED!! 🚧🚧🚧</blockquote>
-        <!-- Add more quotes here -->
+    <div id="whyOverlay" class="overlay">
+        <div class="overlay-content">
+            <p>These quotes inspire me when I need motivation and creativity. Enjoy browsing through them!</p>
+            <button onclick="hideOverlay()">Close</button>
+        </div>
     </div>
-</body>
 
+    <div class="quote-container">
+        <div class="quote-box">"Success is not the key to happiness. Happiness is the key to success." - Albert Schweitzer</div>
+        <div class="quote-box">"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</div>
+        <div class="quote-box">"Life is 10% what happens to us and 90% how we react to it." - Charles R. Swindoll</div>
+    </div>
+    
+    <script src="quotes.js"></script>
+</body>
 </html>
